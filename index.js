@@ -15,7 +15,6 @@ var corsOptions = {
   origin: "https://watt-tawny.vercel.app",
   optionsSuccessStatus: 200,
 };
-axios.defaults.withCredentials = true;
 app.use(cors(corsOptions));
 dotenv.config();
 mongoose.set("strictQuery", true);
