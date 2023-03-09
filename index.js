@@ -8,6 +8,7 @@ import authRoutes from "./routes/auth.js";
 import cookieParser from "cookie-parser";
 
 const app = express();
+const port = process.env.PORT || 5000;
 dotenv.config();
 mongoose.set("strictQuery", true);
 
@@ -39,7 +40,7 @@ app.use((err, req, res, next) => {
   });
 });
 
-app.listen(3000, () => {
+app.listen(port, () => {
   connect();
-  console.log("Connected!");
+  console.log(`Listening on port ${port}`);
 });
