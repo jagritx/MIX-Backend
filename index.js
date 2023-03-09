@@ -39,7 +39,7 @@ app.use((err, req, res, next) => {
   });
 });
 
-app.listen(6500, () => {
+app.listen(3000, () => {
   connect();
   console.log("Connected!");
 });
