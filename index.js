@@ -6,10 +6,10 @@ import videoRoutes from "./routes/videos.js";
 import commentRoutes from "./routes/comments.js";
 import authRoutes from "./routes/auth.js";
 import cookieParser from "cookie-parser";
-import cors from "cors";
+
 const app = express();
 const port = process.env.PORT || 5000;
-app.use(cors());
+
 dotenv.config();
 mongoose.set("strictQuery", true);
 
