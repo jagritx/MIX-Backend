@@ -13,6 +13,7 @@ const port = process.env.PORT || 3000;
 var corsOptions = {
   origin: "https://watt-tawny.vercel.app",
   optionsSuccessStatus: 200,
+  credentials: true,
 };
 app.use(cors(corsOptions));
 dotenv.config();
