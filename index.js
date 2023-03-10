@@ -14,6 +14,7 @@ var corsOptions = {
   origin: "https://watt-tawny.vercel.app",
   optionsSuccessStatus: 200,
   credentials: true,
+  exposedHeaders: ["set-cookie"],
 };
 app.use(cors(corsOptions));
 dotenv.config();
