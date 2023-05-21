@@ -6,7 +6,7 @@ Also Used in the Watt App.
 
 ## Documentation
 
-[API Reference](https://documenter.getpostman.com/view/16265497/2s93JqTkcF)
+[API Reference (Postman)](https://documenter.getpostman.com/view/16265497/2s93JqTkcF)
 
 
 ## Installation
