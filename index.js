@@ -13,7 +13,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 var corsOptions = {
-  origin: "*",
+  origin: "https://wattskill.onrender.com",
   optionsSuccessStatus: 200,
   credentials: true,
   exposedHeaders: ["set-cookie"],
