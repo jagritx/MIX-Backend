@@ -7,17 +7,19 @@ import commentRoutes from "./routes/comments.js";
 import authRoutes from "./routes/auth.js";
 import cookieParser from "cookie-parser";
 import cors from "cors";
+dotenv.config();
+
 const app = express();
 const port = process.env.PORT || 3000;
 
 var corsOptions = {
-  origin: "https://watt-tawny.vercel.app",
+  origin: "*",
   optionsSuccessStatus: 200,
   credentials: true,
   exposedHeaders: ["set-cookie"],
 };
 app.use(cors(corsOptions));
-dotenv.config();
+
 mongoose.set("strictQuery", true);
 
 const connect = () => {
